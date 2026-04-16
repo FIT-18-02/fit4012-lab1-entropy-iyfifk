@@ -1,4 +1,5 @@
-# Run Log – FIT4012 Lab 1 
+# Run Log – FIT4012 Lab 1
+
 
 ## Entropy / Redundancy
 
@@ -13,5 +14,4 @@
 - [x] Đã chạy với `6 9`
 
 ## Điều em học được từ bài lab
-
-Qua bài lab này, em hiểu được cách tính entropy. Em cũng nắm được độ dư thừa là phần thông tin "lãng phí" so với trường hợp lý tưởng Qua việc chạy thử với các chuỗi khác nhau, em thấy rõ chuỗi càng đa dạng ký tự thì entropy càng cao và độ dư thừa càng thấp. Điều này giúp em hiểu vì sao trong mật mã học, dữ liệu cần có entropy cao để khó bị tấn công phân tích tần suất.
+Qua bài lab này, em hiểu rõ hơn về entropy và độ dư thừa thông tin trong dữ liệu. Em nhận thấy dữ liệu càng lặp lại thì entropy càng thấp và redundancy càng cao. Ngoài ra, em cũng nắm được cách sử dụng thuật toán Euclid mở rộng để tìm nghịch đảo modulo. Đây là kiến thức quan trọng trong mật mã học và ứng dụng thực tế.
