@@ -1,4 +1,4 @@
-# Run Log – FIT4012 Lab 1
+# Run Log – FIT4012 Lab 1 
 
 ## Entropy / Redundancy
 
