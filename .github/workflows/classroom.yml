@@ -1,30 +1,31 @@
-name: Autograding Tests
-'on':
-- push
-- repository_dispatch
-permissions:
-  checks: write
-  actions: read
-  contents: read
+name: FIT4012 Lab 1 Auto Check
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+  workflow_dispatch:
+
 jobs:
-  run-autograding-tests:
+  validate-lab01:
     runs-on: ubuntu-latest
-    if: github.actor != 'github-classroom[bot]'
+
     steps:
-    - name: Checkout code
-      uses: actions/checkout@v4
-    - name: lab01-structure-and-content
-      id: lab01-structure-and-content
-      uses: classroom-resources/autograding-command-grader@v1
-      with:
-        test-name: lab01-structure-and-content
-        setup-command: ''
-        command: python3 .github/scripts/check_lab01.py
-        timeout: 10
-        max-score: 10
-    - name: Autograding Reporter
-      uses: classroom-resources/autograding-grading-reporter@v1
-      env:
-        LAB01-STRUCTURE-AND-CONTENT_RESULTS: "${{steps.lab01-structure-and-content.outputs.result}}"
-      with:
-        runners: lab01-structure-and-content
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Set up g++
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y g++
+
+      - name: Run Lab 01 checker
+        run: python3 .github/scripts/check_lab01.py
