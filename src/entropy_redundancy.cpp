@@ -1,4 +1,5 @@
 #include <cmath>
+
 #include <iostream>
 
 #include <map>
@@ -43,5 +44,4 @@ int main() {
     cout << "Entropy: " << entropy << '\n';
     cout << "Redundancy: " << redundancy << '\n';
     return 0;
-}
 }
