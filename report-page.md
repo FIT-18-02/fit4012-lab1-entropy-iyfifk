@@ -1,7 +1,6 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/WTyCYlbL)
 # FIT4012 – Lab 1. Entropy, độ dư thừa thông tin và nghịch đảo modulo
 
-
 ## Mục tiêu bài lab
 Sau khi hoàn thành bài này, sinh viên có thể:
 - Đọc hiểu và chạy được chương trình tính entropy của một chuỗi ký tự.
