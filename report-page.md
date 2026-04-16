@@ -1,28 +1,31 @@
-# Report 1 Page – FIT4012 Lab 1
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/WTyCYlbL)
+# FIT4012 – Lab 1. Entropy, độ dư thừa thông tin và nghịch đảo modulo
 
-## 1. Mục tiêu
-Tóm tắt ngắn gọn mục tiêu của bài lab.
 
-## 2. Cách làm
-- Đọc hiểu chương trình entropy mẫu.
-- Bổ sung hàm tính redundancy.
-- Hoàn thiện hàm mod_inverse().
-- Chạy thử trên nhiều test case.
+## Mục tiêu bài lab
+Sau khi hoàn thành bài này, sinh viên có thể:
+- Đọc hiểu và chạy được chương trình tính entropy của một chuỗi ký tự.
+- Bổ sung chức năng tính độ dư thừa thông tin dựa trên entropy thực tế.
+- Cài đặt hàm tìm nghịch đảo modulo bằng thuật toán Euclid mở rộng.
+- Tổ chức, kiểm thử và nộp bài bằng GitHub repo.
 
-## 3. Kết quả chính
-### 3.1 Entropy và redundancy
-| Input | Entropy | Redundancy | Nhận xét |
-|---|---:|---:|---|
-| aaaa |  |  |  |
-| abcd |  |  |  |
-| hello world |  |  |  |
+## Cấu trúc repo
+- `src/entropy_redundancy.cpp`: Q1, Q2
+- `src/mod_inverse.cpp`: Q3
+- `tests/test_cases.md`: test cases tối thiểu
+- `logs/run_log.md`: log chạy chương trình
+- `report-page.md`: báo cáo 1 trang
 
-### 3.2 Modulo inverse
-| a | m | Kết quả mong đợi | Kết quả chương trình |
-|---:|---:|---|---|
-| 3 | 7 | 5 |  |
-| 10 | 17 | 12 |  |
-| 6 | 9 | Không tồn tại |  |
+## Yêu cầu nộp bài
+Hoàn thiện repo và nộp link GitHub. Repo cần có:
+- `README.md`
+- `report-1page.md`
+- `tests/` với ít nhất 5 test cases
+- `logs/` có kết quả chạy thử
+- mã nguồn hoàn thiện cho Q1, Q2, Q3
 
-## 4. Kết luận
-Nêu ngắn gọn em học được gì từ bài lab, khó khăn lớn nhất là gì, và điều gì giúp em hiểu rõ hơn về entropy hoặc modulo inverse.
+## Gợi ý commit
+- `Complete Q1 entropy walkthrough`
+- `Implement redundancy calculation`
+- `Implement modular inverse with extended Euclid`
+- `Add tests and report`
