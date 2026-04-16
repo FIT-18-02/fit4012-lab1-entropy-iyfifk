@@ -1,14 +1,17 @@
 # Run Log – FIT4012 Lab 1
 
 ## Entropy / Redundancy
-- [ ] Đã chạy với input `aaaa`
-- [ ] Đã chạy với input `abcd`
-- [ ] Đã chạy với input `hello world`
+
+- [x] Đã chạy với input `aaaa`
+- [x] Đã chạy với input `abcd`
+- [x] Đã chạy với input `hello world`
 
 ## Modulo inverse
-- [ ] Đã chạy với `3 7`
-- [ ] Đã chạy với `10 17`
-- [ ] Đã chạy với `6 9`
+
+- [x] Đã chạy với `3 7`
+- [x] Đã chạy với `10 17`
+- [x] Đã chạy với `6 9`
 
 ## Điều em học được từ bài lab
-Viết 3-5 dòng ngắn gọn ở đây.
+
+Qua bài lab này, em hiểu được cách tính entropy. Em cũng nắm được độ dư thừa là phần thông tin "lãng phí" so với trường hợp lý tưởng Qua việc chạy thử với các chuỗi khác nhau, em thấy rõ chuỗi càng đa dạng ký tự thì entropy càng cao và độ dư thừa càng thấp. Điều này giúp em hiểu vì sao trong mật mã học, dữ liệu cần có entropy cao để khó bị tấn công phân tích tần suất.
